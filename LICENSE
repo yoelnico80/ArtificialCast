@@ -1,0 +1,36 @@
+NOT FOR USE LICENSE
+
+This software (the “Software”) is provided solely for demonstrative purposes to illustrate intentionally unsafe, ill-advised, or architecturally unsound software design patterns. It is made available as source code for academic and cautionary examination only.
+
+It is explicitly NOT open-source software. This license does NOT grant any rights to use, copy, modify, distribute, or deploy the Software in any capacity beyond private review for educational or academic purposes.
+
+You (the “User”) are expressly prohibited from:
+
+1. Using the Software in any production, testing, staging, integration, development, demo, or internal tooling environment.
+2. Incorporating the Software, in whole or in part, into any software intended for use by any third party, customer, company, or system, regardless of purpose.
+3. Distributing the Software, modified or unmodified, in Binary, Source, Floppy Disk, or otherwise, except as permitted below.
+4. Presenting the Software as an example of recommended practice, best practice, or viable architecture.
+
+Permitted Academic Use:
+
+You may, without prior permission:
+
+- Study and execute the Software in private for educational or academic purposes.
+- Reference, quote, or excerpt portions of the Software in scientific or technical publications, provided appropriate attribution is given.
+- Include small, attributed snippets of the Software in instructional or scholarly materials for teaching, documentation, or commentary.
+
+These exceptions are granted only for non-commercial, non-deployed, and scholarly contexts.
+
+The Software is provided “AS IS”, without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, non-infringement, non-malware behavior, correctness, reliability, or moral defensibility.
+
+By accessing, viewing, or retaining a copy of the Software, you agree to the following:
+
+- You understand this Software is not safe for use.
+- You accept all risk and liability resulting from exposure to the Software.
+- You will not run the Software in any live, distributed, or production context.
+- You will not seek support, maintenance, or sympathy from the authors or maintainers.
+- You acknowledge that deploying this Software constitutes a willful act of technical malpractice.
+
+In no event shall the authors, contributors, or distributors be held liable for any damage, loss, cost, liability, claim, or regret arising out of or in connection with the Software or its use in violation of this license.
+
+This is not a joke. Do not use this. You’ve been warned.

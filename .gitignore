@@ -1,0 +1,41 @@
+# Build Folders (you can edit these to match your project structure)
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+*.sln.iml
+
+# Dotnet specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Entity Framework
+*.efmigration
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Others
+*.DS_Store
+Thumbs.db
