@@ -123,7 +123,6 @@ Each operation internally uses `AC<TIn, TOut>` under the hood, but provides a ta
 ArtificialCast is part of the **BIGPISS** stack - a set of tools that replaces conventional logic with inference, structure, and prompt design.
 **Behavior-Inferred Generation: Prompt-Oriented Infrastructure for Simulated Software**
 
-ArtificialCast is part of the **BIGPISS** stack - a set of tools that replaces conventional logic with inference, structure, and prompt design.
 
 | Function                                | Signature          | Description                                                                                                      |
 | --------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
