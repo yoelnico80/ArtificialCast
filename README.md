@@ -204,6 +204,8 @@ No keys, no cloud, no nonsense.
 
 ## NOT FOR USE LICENSE
 
+Note: While this license restricts use and redistribution, GitHub's Terms of Service permit public repositories to be forked and viewed. Forking does not imply permission to use the software beyond the limitations set in this license. Any such use remains strictly prohibited.
+
 This software is provided solely for **demonstrative**, **educational**, and **academic** purposes.
 It may be referenced in technical papers, articles, or presentations - but it is **not to be used in any deployed system** under any circumstance.
 
