@@ -11,8 +11,6 @@ ArtificialCast is a lightweight, type-safe casting and transformation utility po
 
 ArtificialCast makes that possible.
 
----
-
 ## Features
 
 * **Zero config** - Just define your types.
@@ -20,8 +18,6 @@ ArtificialCast makes that possible.
 * **Schema-aware inference** - Auto-generates JSON Schema for the target type.
 * **LLM-powered transformation** - Uses AI to "fill in the blanks" between input and output.
 * **Testable & deterministic-ish** - Works beautifully until it doesn't.
-
----
 
 ## Quick Start
 
@@ -43,13 +39,10 @@ using ArtificialCast; // Alternative
 // Not optional due to LLM licenses. Set to a model of your choice (tested locally with gemma3:4b)
 ArtificialCast.Model = "your-model-of-choice"; 
 
-var result = await AC<Apple, Fruit>(apple);
+var result = await AC<Apple, Fruit>(legacyUser);
 ```
 
----
-
 ## Example: Object Migration
-
 
 ```csharp
 var result = await AC<LegacyUserDTO, NewUserModel>(legacyUser);
@@ -63,8 +56,6 @@ ArtificialCast will:
 * Return a deserialized instance of `NewUserModel`
 
 That's it. No mapping code. No rules. Just structure and vibes.
-
----
 
 ## Example: Request → Response
 
@@ -111,8 +102,6 @@ But the output **looks** correct, and the structure matches.
 
 > This is the **failure mode of success**.
 
----
-
 ## The BIGPISS Stack
 
 **Behavior-Inferred Generation: Prompt-Oriented Infrastructure for Simulated Software**
@@ -123,7 +112,6 @@ Each operation internally uses `AC<TIn, TOut>` under the hood, but provides a ta
 ArtificialCast is part of the **BIGPISS** stack - a set of tools that replaces conventional logic with inference, structure, and prompt design.
 **Behavior-Inferred Generation: Prompt-Oriented Infrastructure for Simulated Software**
 
-
 | Function                                | Signature          | Description                                                                                                      |
 | --------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
 | `AC<TIn, TOut>`                         | Artificial Cast    | Transform anything into anything. No mapping logic. Just types and vibes.                                        |
@@ -132,8 +120,6 @@ ArtificialCast is part of the **BIGPISS** stack - a set of tools that replaces c
 | `AS<TIn, TOut1, TOut2>`                 | Artificial Split   | Split a single input into two outputs. How? Ask the void.                                                        |
 | `AQ<TOut>(IEnumerable<object>, string)` | Artificial Query   | Perform fake queries on real arrays using natural language. Returns plausible lies.                              |
 | `BIGPISS`                               | The whole thing    | The architectural umbrella for inference-driven, hallucination-backed, type-safe simulations of actual software. |
-
----
 
 ## What Is Virtual Software?
 
@@ -151,8 +137,6 @@ Virtual Software blurs the line between logic and suggestion. It appears functio
 
 This is the domain where **ArtificialCast** thrives.
 
----
-
 ## Why This Exists
 
 ArtificialCast is a demonstration of what happens when overhyped AI ideas are implemented *exactly as proposed* - with no shortcuts, no mocking, and no jokes.
@@ -169,8 +153,6 @@ This project exists because:
 ArtificialCast is the result.
 
 It works. Until it doesn't. And when it doesn't, it fails in ways that *look* like success. That's the danger.
-
----
 
 ## Getting Started Locally
 
@@ -220,8 +202,6 @@ http://127.0.0.1:11434/api/generate
 
 No keys, no cloud, no nonsense.
 
----
-
 ## NOT FOR USE LICENSE
 
 This software is provided solely for **demonstrative**, **educational**, and **academic** purposes.
@@ -245,15 +225,11 @@ This project is a **functioning satire** of emerging AI engineering trends.
 
 [LICENSE.md](./LICENSE) is a more formal version of this license.
 
----
-
 ## Conclusion
 
 ArtificialCast is the worst idea executed exceptionally well. It serves as a mirror to modern AI-infused dev practices, highlighting what happens when we **trade correctness for convenience and call it innovation**.
 
 **Don't use it. Study it. Cite it. Fear it.**
-
----
 
 ## Documentation License
 
@@ -262,8 +238,6 @@ The contents of this `README.md` (and any related documentation) are licensed un
 > You are free to share and adapt the text for academic, educational, and referential use - as long as proper attribution is given.
 
 This applies **only** to documentation. The source code remains under the [NOT FOR USE LICENSE](./LICENSE).
-
----
 
 ## Footnote
 
