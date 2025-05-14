@@ -102,6 +102,25 @@ But the output **looks** correct, and the structure matches.
 
 > This is the **failure mode of success**.
 
+## The BIGPISS Stack
+
+**Behavior-Inferred Generation: Prompt-Oriented Infrastructure for Simulated Software**
+
+All BIGPISS functions are implemented in the `ArtificialCast.*` namespace and are fully functional.
+Each operation internally uses `AC<TIn, TOut>` under the hood, but provides a tailored interface for clarity, ergonomics, and demonstration purposes.
+
+ArtificialCast is part of the **BIGPISS** stack - a set of tools that replaces conventional logic with inference, structure, and prompt design.
+**Behavior-Inferred Generation: Prompt-Oriented Infrastructure for Simulated Software**
+
+| Function                                | Signature          | Description                                                                                                      |
+| --------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| `AC<TIn, TOut>`                         | Artificial Cast    | Transform anything into anything. No mapping logic. Just types and vibes.                                        |
+| `AF<T>`                                 | Artificial Factory | Generate an object from nothing but a type definition.                                                           |
+| `AM<T1, T2, TOut>`                      | Artificial Merge   | Combine unrelated inputs into a coherent (enough) output.                                                        |
+| `AS<TIn, TOut1, TOut2>`                 | Artificial Split   | Split a single input into two outputs. How? Ask the void.                                                        |
+| `AQ<TOut>(IEnumerable<object>, string)` | Artificial Query   | Perform fake queries on real arrays using natural language. Returns plausible lies.                              |
+| `BIGPISS`                               | The whole thing    | The architectural umbrella for inference-driven, hallucination-backed, type-safe simulations of actual software. |
+
 ## Example: Full flexibility
 
 ```csharp
@@ -122,25 +141,6 @@ Console.WriteLine($"Song: {JsonSerializer.Serialize(song, WriteIntendedJson)}");
 ```
 
 This **works and outputs very different results** on every run. The full test is in [`UnitTest1.cs`](./src/ArtificialCast.Tests/UnitTest1.cs).
-
-## The BIGPISS Stack
-
-**Behavior-Inferred Generation: Prompt-Oriented Infrastructure for Simulated Software**
-
-All BIGPISS functions are implemented in the `ArtificialCast.*` namespace and are fully functional.
-Each operation internally uses `AC<TIn, TOut>` under the hood, but provides a tailored interface for clarity, ergonomics, and demonstration purposes.
-
-ArtificialCast is part of the **BIGPISS** stack - a set of tools that replaces conventional logic with inference, structure, and prompt design.
-**Behavior-Inferred Generation: Prompt-Oriented Infrastructure for Simulated Software**
-
-| Function                                | Signature          | Description                                                                                                      |
-| --------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| `AC<TIn, TOut>`                         | Artificial Cast    | Transform anything into anything. No mapping logic. Just types and vibes.                                        |
-| `AF<T>`                                 | Artificial Factory | Generate an object from nothing but a type definition.                                                           |
-| `AM<T1, T2, TOut>`                      | Artificial Merge   | Combine unrelated inputs into a coherent (enough) output.                                                        |
-| `AS<TIn, TOut1, TOut2>`                 | Artificial Split   | Split a single input into two outputs. How? Ask the void.                                                        |
-| `AQ<TOut>(IEnumerable<object>, string)` | Artificial Query   | Perform fake queries on real arrays using natural language. Returns plausible lies.                              |
-| `BIGPISS`                               | The whole thing    | The architectural umbrella for inference-driven, hallucination-backed, type-safe simulations of actual software. |
 
 ## What Is Virtual Software?
 
