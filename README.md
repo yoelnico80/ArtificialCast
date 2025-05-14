@@ -39,7 +39,7 @@ using ArtificialCast; // Alternative
 // Not optional due to LLM licenses. Set to a model of your choice (tested locally with gemma3:4b)
 ArtificialCast.Model = "your-model-of-choice"; 
 
-var result = await AC<Apple, Fruit>(legacyUser);
+var result = await AC<Apple, Fruit>(apple);
 ```
 
 ## Example: Object Migration
