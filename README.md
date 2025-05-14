@@ -246,7 +246,7 @@ This project is a **functioning satire** of emerging AI engineering trends.
 
 > It is not a joke. It just isn't funny.
 
-[LICENSE.md](./LICENSE) is a more formal version of this license.
+[LICENSE](./LICENSE) is a more formal version of this license.
 
 ## Conclusion
 
