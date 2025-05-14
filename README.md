@@ -102,6 +102,27 @@ But the output **looks** correct, and the structure matches.
 
 > This is the **failure mode of success**.
 
+## Example: Full flexibility
+
+```csharp
+var oldUser = await AF<OldBloatedUser>(); // create a new OldBloatedUser out of nothing
+var oldUserPrefs = await AF<UserPreferences>(); // create a new UserPreferences
+var newUser = await AC<OldBloatedUser, NewUser>(oldUser); // migrate the old user to a new user
+newUser = await AM<NewUser, UserPreferences, NewUser>(newUser, oldUserPrefs); // merge the new user with the old user preferences
+var AFUser = await AF<NewUser>(); // create a new user out of nothing
+var playlist = await AM<NewUser, NewUser, Playlist>(newUser, AFUser); // turn two users into a playlist?
+var song = await AQ<Song[], Song>([..playlist.Songs], "Find the single longest song, please. No array."); // Just no.
+
+Console.WriteLine($"Old User: {JsonSerializer.Serialize(oldUser, WriteIntendedJson)}");
+Console.WriteLine($"Old User Prefs: {JsonSerializer.Serialize(oldUserPrefs, WriteIntendedJson)}");
+Console.WriteLine($"New User: {JsonSerializer.Serialize(newUser, WriteIntendedJson)}");
+Console.WriteLine($"AF User: {JsonSerializer.Serialize(AFUser, WriteIntendedJson)}");
+Console.WriteLine($"Playlist: {JsonSerializer.Serialize(playlist, WriteIntendedJson)}");
+Console.WriteLine($"Song: {JsonSerializer.Serialize(song, WriteIntendedJson)}");
+```
+
+This **works and outputs very different results** on every run. The full test is in [`UnitTest1.cs`](./src/ArtificialCast.Tests/UnitTest1.cs).
+
 ## The BIGPISS Stack
 
 **Behavior-Inferred Generation: Prompt-Oriented Infrastructure for Simulated Software**
